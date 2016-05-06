@@ -1,0 +1,61 @@
+Programming and idea by : E2MA3N [Iman Homayouni]
+Gitbub : https://github.com/e2ma3n
+Email : e2ma3n@Gmail.com
+Website : http://OSLearn.ir
+License : GPL v3.0
+M.SAL v1.0 - README [Monitor. System Authentication Logs]
+
+
+Description :
+This is a simple program for monitoring system authentication logs. This program create dynamic html page for show system authentication in web server. That's mean, you can open your web server ( such as http://example.com/M.SAL/ ) and see which user logged in to the server via ssh protocol and other informations like this.
+
+
+Dependencies :
+00. whoami
+01. sleep
+02. cat
+03. head
+04. tail
+05. cut
+06. awk
+07. date
+08. grep
+09. mv
+10. cp
+11. rm
+
+
+Check dependencies :
+00. sudo chmod +x install.sh
+01. sudo ./install.sh -c
+
+
+Install :
+00. sudo chmod +x install.sh
+01. sudo ./install.sh -i
+
+
+Usage :
+00. sudo /opt/M.SAL_v1.0/M.SAL.sh
+01. http://example.com/M.SAL/
+
+
+Uninstall :
+00. sudo rm -r /opt/M.SAL_v1.0/
+
+
+Tested on :
+00. Debian 8.1.0 netinstall - 64 Bit
+01. Debian 8.4.0 netinstall - 64 Bit
+02. Debian 6.0.6 netinstall - 32 Bit
+03. Debian 7.8.0 netinstall - 64 Bit
+
+
+Startup in system :
+00. nano /etc/crontab	#Open crontab and add the following line to crontab file.
+01. @reboot root /opt/M.SAL_v1.0/M.SAL.sh
+
+
+Notes :
+00. You have two choises : start manually or Starting up Script As a daemon
+01. You should run program as root
